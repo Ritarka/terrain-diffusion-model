@@ -1,9 +1,7 @@
 import os
-import random
-from PIL import Image, ImageFilter
+from PIL import Image
 from pathlib import Path
 from tqdm import tqdm
-from torchvision.transforms import v2
 import torch
 import numpy as np
 from dataset import TerrainDataset
@@ -11,8 +9,7 @@ from dataset import TerrainDataset
 import imageio
 
 from torchvision import transforms
-from haze_synthesis.main import get_encoder_decoder, test_image
-from torch.utils.data import random_split, DataLoader, Dataset
+from torch.utils.data import DataLoader
 
 from models import DCGenerator, DCDiscriminator
 
