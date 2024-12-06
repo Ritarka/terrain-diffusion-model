@@ -1,17 +1,11 @@
 import os
-import torch
 from torch.utils.data import Dataset
-from torchvision.transforms import v2
 from torchvision import transforms
 
 
 from PIL import Image
 from pathlib import Path
-import random
 import matplotlib.pyplot as plt
-
-from haze_synthesis.main import get_encoder_decoder, test_image
-
 
 def get_png_paths(directory):
     png_paths = []
